@@ -86,6 +86,7 @@ PRODUCT_COPY_FILES += \
     vendor/yu/jalebi/proprietary/vendor/lib/libmmcamera_ov8865_qtech_baly_6c.so:system/vendor/lib/libmmcamera_ov8865_qtech_baly_6c.so \
     vendor/yu/jalebi/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/yu/jalebi/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
+    vendor/yu/jalebi/proprietary/lib/librmnetctl.so:system/lib/librmnetctl.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
