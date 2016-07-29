@@ -62,6 +62,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Browser
 
+# Gello
+PRODUCT_PACKAGES += \
+    Gello
+
 # Charger
 ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.usb.id.midi=90BA \
