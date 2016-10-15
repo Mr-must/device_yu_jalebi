@@ -213,6 +213,12 @@
         <item>28</item>
     </integer-array>
 
+    <!-- The RadioAccessFamilies supported by the device.
+         Empty is viewed as "all".  Only used on devices which
+         don't support RIL_REQUEST_GET_RADIO_CAPABILITY
+         format is UMTS|LTE|... -->
+    <string translatable="false" name="config_radio_access_family">GSM | WCDMA | LTE</string>
+
     <!-- Default list of files pinned by the Pinner Service -->
     <string-array translatable="false" name="config_defaultPinnerServiceFiles">
         <item>"/system/framework/arm/boot-framework.oat"</item>
@@ -220,15 +226,19 @@
         <item>"/system/framework/arm/boot.oat"</item>
         <item>"/system/framework/arm/boot-core-libart.oat"</item>
    </string-array>
+   
+    <!-- Doze mode -->
 
-    <!-- Enable doze powersaving -->
-    <bool name="config_enableAutoPowerModes">true</bool>
+    <!-- If true, the doze component is not started until after the screen has been
+         turned off and the screen off animation has been performed. -->
+    <bool name="config_dozeAfterScreenOff">true</bool>
 
-    <!-- The RadioAccessFamilies supported by the device.
-         Empty is viewed as "all".  Only used on devices which
-         don't support RIL_REQUEST_GET_RADIO_CAPABILITY
-         format is UMTS|LTE|... -->
-    <string translatable="false" name="config_radio_access_family">GSM | WCDMA | LTE</string>
+    <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
+    
+    <!-- Screen brightness used to dim the screen while dozing in a very low power state.
+         May be less than the minimum allowed brightness setting
+         that can be set by the user. -->
+    <integer name="config_screenBrightnessDoze">17</integer>
 
     <!-- ComponentName of a dream to show whenever the system would otherwise have
          gone to sleep.  When the PowerManager is asked to go to sleep, it will instead
@@ -240,12 +250,6 @@
          Doze dreams will run whenever the power manager is in a dozing state. -->
     <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
 
-    <!-- Screen brightness used to dim the screen while dozing in a very low power state.
-         May be less than the minimum allowed brightness setting
-         that can be set by the user. -->
-    <integer name="config_screenBrightnessDoze">17</integer>
-
-    <!-- If true, the doze component is not started until after the screen has been
-         turned off and the screen off animation has been performed. -->
-    <bool name="config_dozeAfterScreenOff">true</bool>
+    <!-- Enable doze powersaving -->
+    <bool name="config_enableAutoPowerModes">true</bool>
 </resources>
