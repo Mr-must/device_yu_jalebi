@@ -243,10 +243,12 @@ PRODUCT_COPY_FILES += \
     vendor/yu/jalebi/proprietary/vendor/lib/lib-rtpdaemoninterface.so:system/vendor/lib/lib-rtpdaemoninterface.so \
     vendor/yu/jalebi/proprietary/vendor/lib/lib-rtpsl.so:system/vendor/lib/lib-rtpsl.so \
     vendor/yu/jalebi/proprietary/vendor/lib/libvcel.so:system/vendor/lib/libvcel.so \
-    vendor/yu/jalebi/proprietary/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so
+    vendor/yu/jalebi/proprietary/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so \
+    vendor/yu/jalebi/proprietary/vendor/app/ims/ims.apk:system/vendor/app/ims/ims.apk \
+    vendor/yu/jalebi/proprietary/vendor/app/imssettings/imssettings.apk:system/vendor/app/imssettings/imssettings.apk
 
 PRODUCT_PACKAGES += \
-    ims \
-    imssettings \
+#    ims \
+#    imssettings \
     imscmlibrary
 endif
