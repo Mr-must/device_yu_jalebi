@@ -31,6 +31,11 @@ ifeq ($(strip $(INIT_BOOTCHART)),true)
 BOARD_KERNEL_CMDLINE += androidboot.bootchart=120
 endif
 
+ADD_RADIO_FILES ?= true
+TARGET_RECOVERY_UI_LIB := librecovery_ui_msm
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_msm
+TARGET_RELEASETOOLS_EXTENSIONS := device/qcom/common
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
