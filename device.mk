@@ -57,10 +57,6 @@ PRODUCT_PACKAGES += \
     libmm-qcamera \
     Snap
 
-# Gello
-PRODUCT_PACKAGES += \
-    Gello
-
 # Charger
 ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.usb.id.midi=90BA \
